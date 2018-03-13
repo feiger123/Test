@@ -1,0 +1,13 @@
+public class Number{
+
+public static int test(int n){
+
+    if(n==1||n==2) return 1;
+    else return test(n-2)+test(n-1);
+}
+public static void main(String args[]){
+    for(int i=1;i<50;i++){
+     System.out.println(test(i));
+    }
+}
+}
